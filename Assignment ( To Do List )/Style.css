@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px; 
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 120px); 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.edit, .delete {
+    cursor: pointer;
+}
+
+.edit {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.delete {
+    color: #dc3545;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+
+    input[type="text"] {
+        width: calc(95% - 90px); 
+    }
+
+    button {
+        width: 100px; 
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 1.5em;
+        padding-bottom: 10px; 
+    }
+
+    li {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .edit, .delete {
+        margin-top: 5px; 
+    }
+    
+    input[type="text"] {
+        width: calc(90% - 70px); 
+    }
+
+    button {
+       width: 95px;
+    }
+}
+
+@media (max-width: 373px) {
+    h1 {
+        font-size: 1.5em;
+        padding-bottom: 10px; 
+    }
+
+    li {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .edit, .delete {
+        margin-top: 5px; 
+    }
+    
+    input[type="text"] {
+        width: calc(85% - 70px); 
+    }
+
+    button {
+       width: 95px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.5em;
+        padding-bottom: 10px; 
+    }
+
+    li {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .edit, .delete {
+        margin-top: 5px; 
+    }
+    
+    input[type="text"] {
+        width: calc(125% - 70px);
+        margin-bottom: 10px; 
+        text-align: center;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
